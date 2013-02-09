@@ -1,8 +1,4 @@
 {
 	"users": ["@html5facil","@ninjacodetv","@jimmylagp","@alejo8591"],
-	"plataforma":"phonegap",
-	"tecnologia":"HTML5",
-	"modelo": "html",
-	"vista":"CSS",
-	"controlador": "javascript"
+	"js": ["angularJS", "ExpressJS", "BackboneJS"]
 }
