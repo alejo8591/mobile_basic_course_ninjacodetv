@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ninjacode.tv</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile.theme-1.2.0.min.css">
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="./assets/js/initial.js"></script>
+</head>
+<body>
+    <!-- first page -->
+    <div data-role="page" id="loginpage">
+        <div data-role="header">
+            <h1>Login ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+            <form>
+                <label for="user">User:</label>
+                <input type="text" id="user" name="name" value="" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="" />
+            </form>
+            <div data-role="controlgroup" data-type="vertical">
+                <a id="login" data-role="button" data-theme="b">Login</a>
+                <a id="register" href="#registerpage" data-role="button" data-theme="e">Register</a>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>footer</h3>
+        </div>
+    </div>
+    <!-- second page -->
+    <div data-role="page" id="registerpage">
+        <div data-role="header">
+            <h1>register ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+            <h2>Insert your data for register user</h2>
+            <form>
+                <label for="userRegister">User:</label>
+                <input type="text" id="userRegister" name="name" value="" />
+                <label for="passwordRegister">Password:</label>
+                <input type="password" id="passwordRegister" name="password" value="" />
+            </form>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a id="register" data-role="button" data-theme="a">Save</a>
+                <a id="clearRegister" data-role="button" data-theme="a">Clear</a>
+                <a href="#loginpage" data-role="button" data-theme="a">Cancel</a>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>footer</h3>
+        </div>
+    </div>
+</body>
+</html>
