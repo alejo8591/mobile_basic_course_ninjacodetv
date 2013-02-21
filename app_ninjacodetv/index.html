@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ninjacode.tv</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile.theme-1.2.0.min.css">
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="./assets/js/initial.js"></script>
+</head>
+<body>
+	<!-- first page: home -->
+	<div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+           <div class="ui-grid-a">
+           	<div class="ui-block-a">
+           		<img src="http://ninjacode.tv/images/ninja-code-tv.png" width="450" height="250">
+           	</div>
+           </div>
+            <div class="ui-grid-a">
+           	<div class="ui-block-a">
+           		<img src="http://html5facil.com/wp-content/uploads/2013/01/curso-desarrollo-de-aplicaciones-web-moviles-con-html5-y-jquery-mobile.jpg" width="450" height="300">
+           	</div>
+           </div>
+           <div class="ui-grid-a">
+           	<div class="ui-block-a"><button type="v" data-theme="a">Facebook</button></div>
+           	<div class="ui-block-b"><button type="v" data-theme="a">Twitter</button></div>  
+           </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            	<ul>
+            		<li><a class="ui-btn-active" href="#home" data-icon="home">Home</a></li>
+            		<li><a href="#login" data-icon="grid">Login</a></li>
+            		<li><a href="#info" data-icon="info">Info</a></li>
+            		<li><a href="#about" data-icon="star">Acerca de</a></li>
+            		<li><a href="contact.html" data-icon="plus" data-rel="dialog">Contacto</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- second page: login -->
+	<div data-role="page" id="login">
+        <div data-role="header">
+            <h1>Ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+           <form>
+                <label for="user">User:</label>
+                <input type="text" id="user" name="name" value="" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="" />
+            </form>
+            <div data-role="controlgroup" data-type="vertical">
+                <a id="login" data-role="button" data-theme="b">Login</a>
+                <a id="register" href="#registerpage" data-role="button" data-theme="e">Register</a>
+            </div>
+           <div class="ui-grid-a">
+           	<div class="ui-block-a"><button type="v" data-theme="a">Facebook</button></div>
+           	<div class="ui-block-b"><button type="v" data-theme="a">Twitter</button></div>  
+           </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            	<ul>
+            		<li><a href="#home" data-icon="home">Home</a></li>
+            		<li><a class="ui-btn-active" href="#login" data-icon="grid">Login</a></li>
+            		<li><a href="#info" data-icon="info">Info</a></li>
+            		<li><a href="#about" data-icon="star">Acerca de</a></li>
+            		<li><a href="contact.html" data-icon="plus" data-rel="dialog">Contacto</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- third page: info -->
+	<div data-role="page" id="info">
+        <div data-role="header">
+            <h1>Ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+           <div data-role="collapsible">
+           	<h3>Horarios</h3>
+           	<p>Miercoles 8:30 PM UTC-6</p>
+           </div>
+           <div data-role="collapsible">
+           	<h3>Temas</h3>
+           	<ul data-role="listview">
+           		<li><a href="#">Móviles</a></li>
+           		<li><a href="#">Desarrollo</a></li>
+           		<li><a href="#">Diseño</a></li>
+           		<li><a href="#">Base de datos SQL</a></li>
+           		<li><a href="#">Base de datos NoSQL</a></li>
+           	</ul>
+           </div>
+           	<div data-role="collapsible">
+           	<h3>Comunidades</h3>
+           	<p>Todas las comunidades y personas son binevenidas</p>
+           </div>
+           	</div>
+           <div class="ui-grid-a">
+           	<div class="ui-block-a"><button type="v" data-theme="a">Facebook</button></div>
+           	<div class="ui-block-b"><button type="v" data-theme="a">Twitter</button></div>  
+           </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            	<ul>
+            		<li><a href="#home" data-icon="home">Home</a></li>
+            		<li><a href="#login" data-icon="grid">Login</a></li>
+            		<li><a href="#info" class="ui-btn-active" data-icon="info">Info</a></li>
+            		<li><a href="#about" data-icon="star">Acerca de</a></li>
+            		<li><a href="contact.html" data-icon="plus" data-rel="dialog">Contacto</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- four page: about -->
+	<div data-role="page" id="about">
+        <div data-role="header">
+            <h1>Ninjacode.tv app</h1>
+        </div>
+        <div data-role="content">
+           <h1>¿De que trata Ninja Code TV?</h1>
+           <p>
+           	Conforme avanza la charla surgen ideas de aprovechar el espacio para trasmitir cursos, talleres, tutoriales, reuniones, eventos y mucho más, enfocando a la comunidad desarrolladora y de tecnología para el conocimiento compartido. En este espacio todos ustedes también pueden participar, está abierto a cualquier persona que quiera compartir conocimiento o quiera convocar una reunión, cabe mencionar que en la transmisión obviamente estaremos nosotros.
+
+			Si eres de otra comunidad, podemos acordar detalles, temas en común y unirnos para colaborar entre sí.
+           </p>
+           <div class="ui-grid-a">
+           	<div class="ui-block-a"><button type="v" data-theme="a">Facebook</button></div>
+           	<div class="ui-block-b"><button type="v" data-theme="a">Twitter</button></div>  
+           </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            	<ul>
+            		<li><a href="#home" data-icon="home">Home</a></li>
+            		<li><a href="#login" data-icon="grid">Login</a></li>
+            		<li><a href="#info" class="ui-btn-active" data-icon="info">Info</a></li>
+            		<li><a href="#about" data-icon="star">Acerca de</a></li>
+            		<li><a href="contact.html" data-icon="plus" data-rel="dialog">Contacto</a></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+</body>
+<html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ninjacode.tv</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery.mobile.theme-1.2.0.min.css">
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.mobile-1.2.0.js"></script>
+    <script type="text/javascript" src="./assets/js/initial.js"></script>
+</head>
+<body>
+	<!-- first page: home -->
+	<div data-role="dialog" id="home">
+      <div data-role="header">
+            <h1>Contactenos</h1>
+        </div>
+        <div data-role="content">
+            <form action="contact.php" method="post" data-transation="none">
+                <div data-role="fieldcontain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" value="" />
+                </div>
+                <div data-role="fieldcontain">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" value="" />
+                </div>
+                 <div data-role="fieldcontain">
+                    <label for="comment">Comentarios:</label>
+                    <textarea type="email" id="comment" name="comment" value="" ></textarea>
+                </div>
+                <div data-role="fieldcontain">
+                <label for="contacted">Te seguimos Contactando</label>
+                <select data-role="slider" name="contacted">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                </div>
+                <input type="submit" value="Enviar"> 
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
