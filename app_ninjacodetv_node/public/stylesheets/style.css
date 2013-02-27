@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+textarea{
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+header{
+	padding: 1em;
+	background: #333;
+	color:#fff;
+}
+section{
+	padding: 1em;
+}
+footer{
+	padding: 1em;
+	border-top:1px solid #ccc;
+}

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  header
+    h1= title
+  section
+    form(action='/guardar', method='post')
+      label
+        | Titulo:
+        <br />
+        input(name='txtTitulo', required)
+        <br />
+      label
+        | Descripcion:
+        <br />
+        textarea(name='txtPublicacion', required)
+      <br />
+      button(type='submit') Enviar
+  footer
+     Tutorial Express
+  
+  
+
