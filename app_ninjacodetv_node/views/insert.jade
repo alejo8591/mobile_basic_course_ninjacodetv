@@ -1,0 +1,33 @@
+extends layout
+block content
+  #home(data-role='page')
+      div(data-role='header')
+          h1 Ninjacode.tv app
+        div(data-role='content')
+          form(action='/save', method='post')
+              label
+                | Titulo:
+                input(name='txtTitulo', required)
+              label
+                | Descripcion:
+                textarea(name='txtPublicacion', required)
+              button(type='submit') Enviar
+          .ui-grid-a
+            .ui-block-a
+              button(type='v', data-theme='a') Facebook
+            .ui-block-b
+              button(type='v', data-theme='a') Twitter
+       div(data-role='footer', data-position='fixed')
+          div(data-role='navbar')
+            ul
+              li
+                a(href='/', data-icon='home') Home
+              li
+                a.ui-btn-active(href='/insert', data-icon='grid') Insertar
+              li
+                a(href='/consult', data-icon='info') Consultar
+              li
+                a(href='/about', data-icon='star') Nosotros
+              li
+                a(href='/contact', data-icon='plus', data-rel='dialog') Contacto
+  

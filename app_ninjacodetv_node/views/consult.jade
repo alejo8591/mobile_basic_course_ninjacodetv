@@ -1,15 +1,16 @@
 extends layout
 block content
-  #home(data-role='page')
+  #consult(data-role='page')
       div(data-role='header')
           h1 Ninjacode.tv app
         div(data-role='content')
-          .ui-grid-a
-            .ui-block-a
-              img(src='http://ninjacode.tv/images/ninja-code-tv.png', width='450', height='250')
-          .ui-grid-a
-            .ui-block-a
-              img(src='http://html5facil.com/wp-content/uploads/2013/01/curso-desarrollo-de-aplicaciones-web-moviles-con-html5-y-jquery-mobile.jpg', width='450', height='300')
+          div#resultado
+            ul(data-role='listview')
+              each dato in datos
+                li
+                  h4=dato.title
+                  p=dato.content
+            br
           .ui-grid-a
             .ui-block-a
               button(type='v', data-theme='a') Facebook
@@ -19,11 +20,11 @@ block content
           div(data-role='navbar')
             ul
               li
-                a.ui-btn-active(href='/', data-icon='home') Home
+                a(href='/', data-icon='home') Home
               li
                 a(href='/insert', data-icon='grid') Insertar
               li
-                a(href='/consult', data-icon='info') Consultar
+                a.ui-btn-active(href='/consult', data-icon='info') Consultar
               li
                 a(href='/about', data-icon='star') Nosotros
               li

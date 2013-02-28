@@ -1,0 +1,22 @@
+extends layout
+block content
+  #contact(data-role='dialog')
+    div(data-role='header')
+      h1 Contactenos
+      div(data-role='content')
+        form(action='/contactme', method='post', data-transation='none')
+          div(data-role='fieldcontain')
+            label(for='name') Nombre:
+            input#name(type='text', name='name', value='')
+          div(data-role='fieldcontain')
+            label(for='email') email:
+            input#email(type='email', name='email', value='')
+          div(data-role='fieldcontain')
+            label(for='comment') Comentarios:
+            textarea#comment(type='email', name='comment', value='')
+          div(data-role='fieldcontain')
+            label(for='contacted') Te seguimos Contactando
+            select(data-role='slider', name='contacted')
+              option(value='1') Yes
+              option(value='0') No
+          input(type='submit', value='Enviar')

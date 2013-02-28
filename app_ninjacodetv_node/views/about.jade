@@ -1,0 +1,29 @@
+extends layout
+block content
+  #home(data-role='page')
+      div(data-role='header')
+          h1 Ninjacode.tv app
+        div(data-role='content')
+          h1 ¿De que trata Ninja Code TV?
+          p
+          | Conforme avanza la charla surgen ideas de aprovechar el espacio para trasmitir cursos, talleres, tutoriales, reuniones, eventos y mucho más, enfocando a la comunidad desarrolladora y de tecnología para el conocimiento compartido. En este espacio todos ustedes también pueden participar, está abierto a cualquier persona que quiera compartir conocimiento o quiera convocar una reunión, cabe mencionar que en la transmisión obviamente estaremos nosotros.
+          | Si eres de otra comunidad, podemos acordar detalles, temas en común y unirnos para colaborar entre sí.
+          br
+          .ui-grid-a
+            .ui-block-a
+              button(type='v', data-theme='a') Facebook
+            .ui-block-b
+              button(type='v', data-theme='a') Twitter
+        div(data-role='footer', data-position='fixed')
+          div(data-role='navbar')
+            ul
+              li
+                a(href='/', data-icon='home') Home
+              li
+                a(href='/insert', data-icon='grid') Insertar
+              li
+                a(href='/consult', data-icon='info') Consultar
+              li
+                a.ui-btn-active(href='/about', data-icon='star') Nosotros
+              li
+                a(href='/contact', data-icon='plus', data-rel='dialog') Contacto
